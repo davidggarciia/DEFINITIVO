@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.definitivo.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.definitivo.ui.dashboard.DashboardFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_restaurantes"
+            app:destination="@id/navigation_restaurantes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.definitivo.ui.notifications.NotificationsFragment"
+        android:label="ShopCart"
+        tools:layout="@layout/fragment_notifications" />
+
+
+
+
+    <fragment
+        android:id="@+id/navigation_restaurantes"
+        android:name="com.example.definitivo.ui.RestaurantesFragment"
+        android:label="Restaurantes"
+        tools:layout="@layout/fragment_restaurantes" >
+        <action
+            android:id="@+id/action_navigation_restaurantes_to_navigation_comida"
+            app:destination="@id/navigation_comida" />
+        <action
+            android:id="@+id/action_navigation_restaurantes_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_comida"
+        android:name="com.example.definitivo.ui.ComidaFragment"
+        android:label="Comida"
+        tools:layout="@layout/fragment_comida2" >
+        <action
+            android:id="@+id/action_navigation_comida_to_navigation_restaurantes"
+            app:destination="@id/navigation_restaurantes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.definitivo.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+
+</navigation>

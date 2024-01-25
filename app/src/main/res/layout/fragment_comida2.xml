@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ComidaFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/text_categories5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:fontFamily="@font/bebas_neue"
+            android:text="details"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+
+            android:translationY="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:translationY="75dp"
+            android:src="@drawable/burger"            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:text="Hamburguer"
+            android:textColor="#171717"
+            android:textSize="50dp"
+            android:translationX="20dp"
+            android:translationY="370dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:text="10€"
+            android:textColor="#000000"
+            android:textSize="70dp"
+            android:translationX="50dp"
+            android:translationY="550dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/heebo"
+            android:text="A juicy beef patty layered with tangy barbecue sauce, melted cheese, crispy bacon, and caramelized onions. It's a flavorful delight in every bite"
+            android:textSize="18dp"
+            android:translationX="15dp"
+            android:translationY="430dp" />
+
+
+        <Button
+            android:id="@+id/boton_disminuir_cantidad"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FFF2F2"
+            android:text="-"
+            android:textColor="#000000"
+            android:translationX="210dp"
+            android:translationY="570dp" />
+
+        <TextView
+            android:id="@+id/texto_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:justificationMode="inter_word"
+            android:text="1"
+            android:textSize="25dp"
+            android:translationX="275dp"
+            android:translationY="580dp" />
+
+        <Button
+            android:id="@+id/boton_aumentar_cantidad"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FFF2F2"
+            android:text="+"
+            android:textColor="#000000"
+            android:translationX="300dp"
+            android:translationY="570dp" />
+
+
+        <ImageButton
+            android:id="@+id/boton_agregar_al_carrito"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00E6D1"
+            android:scaleType="centerInside"
+            android:src="@drawable/carritocompraicon"
+            android:textColor="#000000"
+            android:translationX="350dp"
+            android:translationY="570dp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

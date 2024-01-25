@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="733dp"
+        android:background="@drawable/gradient"
+        tools:ignore="MissingConstraints" >
+
+        <ImageButton
+            android:id="@+id/boton1"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="40dp"
+            android:translationY="120dp"
+            android:src="@drawable/fastfood"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:text="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+
+        <ImageButton
+            android:src="@drawable/bebidas2"
+            android:scaleType="centerInside"
+            android:id="@+id/boton2"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="220dp"
+            android:translationY="120dp"
+            android:text="2"
+            android:textColor="@color/white"
+            />
+
+        <ImageButton
+            android:src="@drawable/kebab"
+            android:scaleType="centerInside"
+            android:id="@+id/boton4"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="220dp"
+            android:translationY="260dp" />
+
+        <ImageButton
+            android:src="@drawable/postre"
+            android:scaleType="centerInside"
+            android:id="@+id/boton"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="220dp"
+            android:translationY="400dp" />
+
+        <ImageButton
+            android:src="@drawable/paella"
+            android:scaleType="centerInside"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="220dp"
+            android:translationY="540dp" />
+
+        <ImageButton
+            android:src="@drawable/gamba"
+            android:scaleType="centerInside"
+            android:id="@+id/boton3"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="40dp"
+            android:translationY="120dp" />
+
+        <ImageButton
+            android:src="@drawable/hola"
+            android:scaleType="centerInside"
+            android:id="@+id/boton5"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/boton3"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="40dp"
+            android:translationY="120dp" />
+
+        <ImageButton
+            android:src="@drawable/bebida"
+            android:scaleType="centerInside"
+            android:id="@+id/boton7"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/boton5"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFF2F2"
+            android:translationX="40dp"
+            android:translationY="120dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:fontFamily="@font/bebas_neue"
+        android:text="categories"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+
+        android:translationY="-300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
