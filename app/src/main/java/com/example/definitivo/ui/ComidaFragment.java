@@ -16,7 +16,6 @@ import androidx.navigation.Navigation;
 import com.example.definitivo.R;
 
 public class ComidaFragment extends Fragment {
-
     private int cantidad = 1; // Inicializar la cantidad a 1
     private TextView cantidadTextView; // TextView para mostrar la cantidad seleccionada
 
@@ -32,6 +31,7 @@ public class ComidaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_comida2, container, false);
+
 
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
             @Override
@@ -54,6 +54,8 @@ public class ComidaFragment extends Fragment {
         return view;
     }
 
+
+
     // Método para disminuir la cantidad
     private void disminuirCantidad() {
         if (cantidad > 1) {
@@ -75,3 +77,5 @@ public class ComidaFragment extends Fragment {
         Toast.makeText(requireContext(), mensaje, Toast.LENGTH_SHORT).show();
     }
 }
+
+

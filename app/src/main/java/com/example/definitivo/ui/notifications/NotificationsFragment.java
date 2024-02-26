@@ -30,7 +30,6 @@ public class NotificationsFragment extends Fragment {
 
         // Crear una lista de elementos del carrito (esto es solo un ejemplo)
         cartItems = new ArrayList<>();
-        cartItems.add("Hamburger");
 
         // Inicializar y establecer el adaptador para mostrar los elementos del carrito en el ListView
         cartAdapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, cartItems);

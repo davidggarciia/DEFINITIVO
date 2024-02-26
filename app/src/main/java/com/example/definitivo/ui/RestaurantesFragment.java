@@ -18,6 +18,9 @@ public class RestaurantesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_restaurantes, container, false);
 
+
+
+
         ImageView imageView = view.findViewById(R.id.imageView); // Reemplaza R.id.imageView con tu ID de ImageView
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
