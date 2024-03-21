@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:fontFamily="@font/bebas_neue"
             android:text="Título del producto" />
 
         <TextView
@@ -31,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
+            android:fontFamily="@font/bebas_neue"
             android:text="Precio: \$10.00" />
 
         <LinearLayout
@@ -49,7 +51,9 @@
                 android:layout_width="40dp"
                 android:layout_height="30dp"
                 android:gravity="center"
+                android:translationY="-5dp"
                 android:background="@drawable/fondo_cantidad"
+                android:fontFamily="@font/bebas_neue"
                 android:text="1" />
 
             <Button

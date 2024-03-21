@@ -40,7 +40,6 @@ public class DashboardFragment extends Fragment { //CATEGORIES
 
         return view;
     }
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
